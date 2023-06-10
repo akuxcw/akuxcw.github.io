@@ -1,96 +1,454 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>个人主页</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #f2f2f2;
-		}
-		header {
-			background-color: #333;
-			color: #fff;
-			padding: 20px;
-			text-align: center;
-		}
-		h1 {
-			margin: 0;
-			font-size: 36px;
-		}
-		nav {
-			background-color: #ccc;
-			padding: 10px;
-		}
-		nav a {
-			display: inline-block;
-			padding: 10px;
-			color: #333;
-			text-decoration: none;
-		}
-		nav a:hover {
-			background-color: #333;
-			color: #fff;
-		}
-		section {
-			margin: 20px;
-			padding: 20px;
-			background-color: #fff;
-			box-shadow: 0 0 5px rgba(0,0,0,0.1);
-		}
-		footer {
-			background-color: #333;
-			color: #fff;
-			padding: 10px;
-			text-align: center;
-		}
-	</style>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Homepage of Denvid Lau</title>
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.thrColFixHdr #sidebar1 { width: 180px; }
+.thrColFixHdr #sidebar2 { width: 190px; }
+</style>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.thrColFixHdr #sidebar2, .thrColFixHdr #sidebar1 { padding-top: 30px; }
+.thrColFixHdr #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style type="text/css">
+
+
+<!--
+@import url("mainpage.css");
+.style2 {font-size: small}
+.style3 {font-size: small; font-weight: bold; }
+-->
+</style>
 </head>
-<body>
-	<header>
-		<h1>个人主页</h1>
-	</header>
-	<nav>
-		<a href="#about-me">关于我</a>
-		<a href="#experience">工作经历</a>
-		<a href="#education">教育背景</a>
-		<a href="#skills">技能</a>
-		<a href="#contact">联系我</a>
-	</nav>
-	<section id="about-me">
-		<h2>关于我</h2>
-		<p>我是一个热爱编程的程序员，喜欢研究新技术和开源项目。</p>
-	</section>
-	<section id="experience">
-		<h2>工作经历</h2>
-		<ul>
-			<li>2018-至今：某科技公司，前端开发工程师</li>
-			<li>2016-2018：某互联网公司，前端实习生</li>
-		</ul>
-	</section>
-	<section id="education">
-		<h2>教育背景</h2>
-		<ul>
-			<li>2014-2018：某大学，计算机科学专业</li>
-		</ul>
-	</section>
-	<section id="skills">
-		<h2>技能</h2>
-		<ul>
-			<li>HTML/CSS/JavaScript</li>
-			<li>React/Vue</li>
-			<li>Node.js/Express</li>
-			<li>Git/GitHub</li>
-		</ul>
-	</section>
-	<section id="contact">
-		<h2>联系我</h2>
-		<p>Email: example@example.com</p>
-		<p>GitHub: <a href="https://github.com/example">example</a></p>
-	</section>
-	<footer>
-		<p>版权所有 &copy; 2023</p>
-	</footer>
-</body>
-</html>
+
+<body class="thrColFixHdr" onload="MM_CheckFlashVersion('8,0,0,0','Content on this page requires a newer version of Adobe Flash Player. Do you want to download it now?');MM_preloadImages('images/navigation/menu/my1.gif','images/navigation/menu/my2.gif','images/navigation/menu/my3.gif','images/navigation/menu/my5.gif','images/navigation/menu/my8.gif','images/navigation/menu/my13.jpg')">
+<div id="wrapper">
+
+<div id="container">
+  <div id="header">
+    <div align="center"><img src="images/website-banner.jpg" alt="" width="975" height="244" border="0" usemap="#MapMapMap" />
+      <map name="MapMapMap" id="MapMapMap">
+        <area shape="rect" coords="112,47,456,64" href="http://bccw.cityu.edu.hk/main/wp_home.asp" />
+        <area shape="rect" coords="111,29,314,45" href="http://www.cityu.edu.hk/" />
+        <area shape="rect" coords="641,45,863,181" href="index.htm" />
+        <area shape="rect" coords="113,219,191,231" href="people_files/denvid.html" />
+      </map>
+      <br />
+     <br />
+         <img id="B1Research" src="logos/research.png" width="155" height="80" usemap="#MapResearch" onload="MM_preloadImages('logos/research_shiny.png')" />
+        <!--
+    -->
+        <img id="B1People" src="logos/people.png" width="155" height="80" usemap="#MapPeople" onload="MM_preloadImages('logos/people_shiny.png')" />
+        <!--
+    -->
+        <img id="B1Publications" src="logos/publications.png" width="155" height="80" usemap="#MapPublications" onload="MM_preloadImages('logos/publications_shiny.png')" />
+        <!--
+	-->
+        <img id="B1Teaching" src="logos/teaching.png" width="155" height="80" usemap="#MapTeaching" onload="MM_preloadImages('logos/teaching_shiny.png')" />
+        <!--
+	-->
+        <img id="B1Contact" src="logos/contact.png" width="155" height="80" usemap="#MapContact" onload="MM_preloadImages('logos/contact_shiny.png')" />
+        <!--
+	-->
+        <img id="B1Related" src="logos/related.png" width="155" height="80" usemap="#MapRelated" onload="MM_preloadImages('logos/related_shiny.png')" />
+		
+        <map name="MapResearch" id="MapResearch">
+          <area shape="rect" coords="0,34,155,80" onmouseover="document.getElementById('B1Research').src='logos/research_shiny.png'; document.getElementById('B1Research').style.width='155'; document.getElementById('B1Research').style.height='80';" 
+	onmouseout="document.getElementById('B1Research').src='logos/research.png';document.getElementById('B1Research').style.width='155'; document.getElementById('B1Research').style.height='80';" href="research.html" />
+        </map>
+        <map name="MapPeople" id="MapPeople">
+          <area shape="rect" coords="0,34,155,80" onmouseover="document.getElementById('B1People').src='logos/people_shiny.png'; document.getElementById('B1People').style.width='155'; document.getElementById('B1People').style.height='80';" 
+	onmouseout="document.getElementById('B1People').src='logos/people.png';document.getElementById('B1People').style.width='155'; document.getElementById('B1People').style.height='80';" href="people.html" />
+        </map>
+        <map name="MapPublications" id="MapPublications">
+          <area shape="rect" coords="0,34,155,80" onmouseover="document.getElementById('B1Publications').src='logos/publications_shiny.png'; document.getElementById('B1Publications').style.width='155'; document.getElementById('B1Publications').style.height='80';" 
+	onmouseout="document.getElementById('B1Publications').src='logos/publications.png';document.getElementById('B1Publications').style.width='155'; document.getElementById('B1Publications').style.height='80';" href="publications.html" />
+        </map>
+        <map name="MapTeaching" id="MapTeaching">
+          <area shape="rect" coords="0,34,155,80" onmouseover="document.getElementById('B1Teaching').src='logos/teaching_shiny.png'; document.getElementById('B1Teaching').style.width='155'; document.getElementById('B1Teaching').style.height='80';" 
+	onmouseout="document.getElementById('B1Teaching').src='logos/teaching.png';document.getElementById('B1Teaching').style.width='155'; document.getElementById('B1Teaching').style.height='80';" href="teaching.html" />
+        </map>
+        <map name="MapContact" id="MapContact">
+          <area shape="rect" coords="0,34,155,80" onmouseover="document.getElementById('B1Contact').src='logos/contact_shiny.png'; document.getElementById('B1Contact').style.width='155'; document.getElementById('B1Contact').style.height='80';"
+	onmouseout="document.getElementById('B1Contact').src='logos/contact.png';document.getElementById('B1Contact').style.width='155'; document.getElementById('B1Contact').style.height='80';" href="mailto:denvid.lau@cityu.edu.hk" />
+        </map>
+        <map name="MapRelated" id="MapRelated">
+          <area shape="rect" coords="0,34,155,80" onmouseover="document.getElementById('B1Related').src='logos/related_shiny.png'; document.getElementById('B1Related').style.width='155'; document.getElementById('B1Related').style.height='80';" 
+	onmouseout="document.getElementById('B1Related').src='logos/related.png';document.getElementById('B1Related').style.width='155'; document.getElementById('B1Related').style.height='80';" href="related_links.html" />
+        </map>
+		
+        <img src="logos/Welcome.jpg" width="970" height="76" />
+		
+        <div id="mainContent">
+          <div id="front">
+            <table align="center" border="0" cellpadding="2" width="630">
+              <tbody>
+			       <tr>
+						<td colspan="2"><div align="center"><a href="images/dinner_09_2014.jpg"></a><a href="images/march_2015_dinner.jpg"></a><a href="images/dinner_09_2015.jpg"></a><a href="images/christmas_party_2016.jpg"></a><a href="images/annual_party_2023.jpg"><img src="images/annual_party_2023.jpg" width="620" height="191" border="0" /></a></div></td>
+				</tr>
+                <tr>
+                  <td colspan="2"><h3 class="style3">Current Openings</h3>
+                      <p class="style2"> There are several openings in the areas of atomistic modeling, multiscale analysis, FRP-bonded concrete systems and meso-scale/nano-scale experimentation. Applications are invited for the PhD study, <a href="http://www6.cityu.edu.hk/hro/en/job/current/research.asp?ref=ur-ar825">research assistant/associate (RA) and post-doctoral associate positions</a>. Interested candidates with high self-motivation, strong background in solid mechanics and Linux operation system, and good interpersonal skills are encouraged to submit an application for the above positions.  Please send your CV to denvid.lau(at)cityu(dot)edu(dot)hk if you are interested in joining the group.</p></td>
+                </tr>
+                <tr valign="top">
+                  <td><h3 class="style3">News</h3>
+                    <p><span class="style3">June 2023<br />
+                    </span><span class="style2">-- Denvid Lau served as one of the final judges in the Young Techpreneur Project (創科N世代)   on 2 June 2023.</span> [<a href="images/young_techpreneur_project_2023.jpg">link</a>] </p>
+                    <p><span class="style3">April 2023<br />
+                    </span><span class="style2">-- Denvid Lau served as adjudicators in the final judging of the Hong Kong Student Science Project Competition (HKSSPC) and attended the award ceremony  on 23 April 2023.</span> [<a href="images/HKSSPC_2023.jpg">link</a>] </p>
+                    <p class="style2"><strong><strong><strong><strong>March 2023</strong></strong></strong></strong><br />
+                      -- Denvid Lau will be one of the plenary speakers in the International Experts Summit on Renewable and Sustainable Energy IESRSE 2023. [<a href="https://www.meghazmeetings.com/iesrse-2023/conference/speakers/#plenaryspeakers">link</a>] <br />
+                    -- Denvid Lau was the Chair for Session 1 and Session 9: SHM/NDE of Civil Structures/Infrastructure in the SPIE Smart Structures/NDE 2023 from March 12-16 in Long Beach, CA, USA.</p>
+                    <p class="style2"><strong>January 2023<br />
+                    </strong>-- Denvid Lau has been involved in two funded Research Impact Fund (RIF) 2022-23 as the Co-Principal Investigator. [<a href="https://mp.weixin.qq.com/s/Lohsf_Ei5ewL_3L3lPEQDA">link</a>][<a href="images/RIF_2022-23.jpg">jpg</a>] </p>
+                    <p class="style2"><strong>August 2022<br />
+                    </strong>-- Jasmine Wang received her PhD degree from CityU. [<a href="images/jasmine_graduation_2022.jpg">jpg</a>] </p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>April 2022<br />
+                      </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau has received the CENG Outstanding Teaching Award on April 13.<br />
+                      -- Denvid Lau has become a Member of Hong Kong Institute for Clean Energy.</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Janaury 2022<br />
+                    </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau has become a Vebleo Fellow.<br />
+</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>November 2021<br />
+                    </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau is appointed as the Residence Master of Hall 9 at CityU Student Residence.</p>
+                    <p class="style2"><strong><strong>October  2021</strong><br />
+                    </strong>-- Denvid Lau gave an invited talk in Chinese YMCA College on October 19 under  Talks at School Program organised by The Hong Kong Academy of Sciences. [<a href="images/YMCA_Oct_19.jpg">jpg</a>]</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>September 2021</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau becomes the Elected Member of the Senate.<br />
+                      -- Denvid Lau becomes the Elected Member in the Departmental Staffing Committee (DSC).</p>
+<p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>August 2021<br />
+                                        </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau is appointed as the Departmental External Affair Coordinator  in the Department of Architecture and Civil Engineering at CityU.<br />
+                                        -- PhD student, Jasmine Wang, has been awarded the Institutional Research Tuition Scholarship / Research Tuition Scholarship by CityU in recognition of her academic achievement and study progress.</p>
+<p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>December 2020<br />
+</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau has received the Outstanding Supervisor Award.</p>
+<p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong>January 2020</strong><br />
+                    </strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau starts his sabbatical leave and is currently a visiting professor at MIT Department of Civil and Environmental Engineering. [<a href="images/MIT_visiting_prof_denvid.jpg">jpg</a>]</p>
+                    <p class="style2"><span class="style2"><strong>December 2019<br />
+                      </strong>-- Huali Hao and Jane Jian received their PhD degrees from CityU. [<a href="images/huali_jane_graduation_2019.jpg">jpg</a>]<br />
+                      -- Postdoctoral Fellow, Dr Jane Jian, attended APCOM 2019 in Taipei and had an oral presentation entitled &quot;Enhancing the interface within CNT-nanocomposites from molecular level&quot;. This work is authored by W. Jian and D. Lau. [<a href="images/apcom_2019.jpg">jpg</a>]<br />
+                      --PhD student, Jasmine Wang,
+                      attended APCOM 2019 in Taipei and had an oral presentation entitled &quot;Water absorption on the fiber-matrix Interface  in glass fiber reinforced polymer composites&quot;. This work is authored by X.Q. Wang and D. Lau.</span> [<a href="images/apcom_2019.jpg">jpg</a>]</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong>August 2019 </strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau was an invited speaker in ChinaNANO 2019 from August 17-19 in Beijing, China. [<a href="images/ChinaNANO_2019.jpg">jpg</a>]<br />
+                      -- Denvid Lau was invited for seminar at Beihang University on August 19. [<a href="images/2019_Beihang_seminar.jpg">jpg</a>]</p>
+                      <p class="style2"><strong>June 2019</strong><br />
+                        -- Denvid Lau attended the inauguration ceremony of The Hong Kong Young Academy of Sciences on June 9. [<a href="images/yashk_Jun_2019.jpg">jpg</a>]<br />
+                        -- PhD student, Huali Hao, attended IFireSS 2019 at Carleton University and had an oral presentation entitled &quot;Formation mechanism of carbon monoxide in wood combustion: An atomistic study using reactive forcefield&quot;. The conference paper is authored by H. Hao, C.L. Chow and D. Lau.</p>
+  <p class="style2"><strong><strong><strong><strong>April 2019</strong></strong></strong></strong><br />
+                        -- Denvid Lau was an invited speaker in the 1st Symposium of Composite Structures in Guangdong, Hong Kong and Macau Greater Bay Area from April 26-27.</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong></strong></strong></strong></strong></strong></strong></strong></strong><strong><strong><strong><strong>March 2019</strong></strong></strong></strong><br />
+                      -- Denvid Lau was the Chair for Session 2 and Session 6: SHM/NDE of Civil Structures/Infrastructure in the SPIE Smart Structures/NDE 2019 from March 3-7 in Denver, CO, USA.</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong>December 2018 </strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau was invited for seminar at Harbin Institute of Technology  on December 13. [<a href="images/HIT_Dec_13.jpg">jpg</a>]<br />
+                      -- Dr. Kunal Kupwade-Patil visited DENS Group on December 4 and gave a seminar entitled &quot;New Sustainable Solutions for Building New Infrastructure Using Naturally Available and Recycled Materials&quot;. [<a href="images/kunal_2018.jpg">jpg</a>]</p>
+                <p class="style2"><strong>July 2018</strong><br />
+                        ---- Denvid Lau was a <a href="http://icce-nano.org/">keynote speaker</a> in the ICCE-26 from July 15-21 in Paris, France. [<a href="images/ICCE_keynote_DL_02.jpg">jpg</a>]<br />
+                    -- Denvid Lau is appointed as an Associate Professor with tenure in the Department of Architecture and Civil Engineering at City University of Hong Kong, Hong Kong, China. </p>
+                    <p class="style2"><strong></strong><strong>June 2018</strong><br />
+  -- PhD student, Huali Hao, attended the EMI Conference at MIT and had an oral presentation entitled &quot;A multiscale study on the role of heterogeneity in natural bamboo&quot;. The conference paper is authored by H. Hao and D. Lau.<br />
+                    </p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>May 2018</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau was a <a href="http://www.icamem.org/plenary.html">plenary speaker</a> in the conference <a href="http://www.icamem.org/index.html">ICAMEM2018</a> from May 17-18 in Bangkok, Thailand. [<a href="images/ICAMEM_2018_plenary.jpg">jpg</a>]<br />
+                    </p>
+            <p class="style2"><strong><strong><strong><strong>March 2018</strong></strong></strong></strong><br />
+                        -- Denvid Lau has received the Young Engineer of the Year Award 2018 - Certificate of Merit in the HKIE 43rd Annual Dinner on March 16. [<a href="images/hkie_annual_dinner_2018.jpg">jpg</a>]<br />
+                        -- Denvid Lau will be promoted to Associate Professor with tenure in CityU on 1 July 2018.<br />
+-- Denvid Lau was the Chair for Session 2: SHM/NDE of Civil Structures/Infrastructure II in the SPIE Smart Structures/NDE 2018 from March 4-8 in Denver, CO, USA.</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong>January 2018</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau has received one of The President's Awards from CityU, in recognition of his remarkable achievement in his respective academic arena in support of the University’s enhancement and development.<br />
+                      -- Prof. David Hui visited DENS Group on January 10 and gave a seminar entitled &quot;Nano-Engineered Mechanics: Why Nano?&quot;. [<a href="documents/Seminar_Prof_David_Hui_10_Jan_2018.pdf">pdf</a>]</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>November 2017</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau was a <a href="images/meacm2017.jpg">plenary speaker</a> in the conference <a href="http://www.meacm.org/">MEACM2017</a> from November 23-24 in Hong Kong.<br />
+                      -- Ao Zhou and Zechuan Yu received their PhD degrees from CityU. [<a href="images/ao_zec_graduation_2017.jpg">jpg</a>]</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong>September 2017 </strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau is nominated and selected as a Founding Member of the Young Academy of Sciences of Hong Kong (YASHK).<br />
+                      -- Denvid Lau is appointed as the Major Programme Leader of Civil Engineering (CEG), as well as Civil and Structural Engineering (CVSE) in the Department of  Architecture and Civil Engineering at CityU.<br />
+                    -- Denvid Lau becomes the Elected Member in the Departmental Staffing Committee (DSC).</p>
+                      <p class="style2"><strong></strong><strong><strong><strong><strong><strong><strong><strong><strong>August 2017  </strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Prof. Claire White visited DENS Group on August 4 and gave a seminar entitled &quot;Designing Sustainable Cementitious Materials for a Sustainable Future&quot;. [<a href="images/claire_2017.jpg">jpg</a>]<br />
+                        -- Prof. Yu-Min Su visited DENS Group on August 9. [<a href="images/yumin_2017.jpg">jpg</a>]<br />
+                      </p>
+                  <p class="style2"><strong>July 2017</strong><br />
+                        -- Denvid Lau was the Symposium Chair of &quot;Infrastructure Composites&quot; in ICCE-25 from July 16-21 in Rome, Italy.<br />
+                        -- PhD student, Huali Hao, attended the ICCE-25 and had an oral presentation entitled &quot;Effect of temperature on the interfacial property of bimetallic composite&quot;. The conference paper is authored by H. Hao and D. Lau.<br />
+                        -- PhD student, Jane Jian, attended the ICCE-25 and had an oral presentation entitled &quot;Temperature effect on interfacial creep behavior in bonded material system&quot;. The conference paper is authored by W. Jian and D. Lau.<br />
+                        -- PhD student, Qiwen Qiu, attended the  APFIS 2017  and had an oral presentation entitled &quot;Effect of chlorides on mechanical properties of FRP reinforced concrete columns&quot;. The conference paper is authored by A. Zhou, Q. Qiu and D. Lau.<br />
+                        -- PhD student, Zec Yu, attended the  ISERCI 2017  and had an oral presentation entitled &quot;Enhanced tensile strength of CNT-reinforced C-S-H nanobranch: A molecular dynamics study&quot;. The conference paper is authored by Z. Yu and D. Lau.</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong>June 2017</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Prof. David Hui visited DENS Group on June 27 and gave a seminar entitled &quot;How To Write Papers To Enhance Journal Acceptance?&quot;. [<a href="images/2017_DH_visit.jpg">jpg</a>]</p>
+<p class="style2"><strong><strong><strong><strong>April 2017</strong></strong></strong></strong><br />
+                        -- Denvid Lau was invited for seminar at Harbin Institute of Technology (Shenzhen) on April 28. [<a href="images/HIT_Shenzhen_Apr_28.jpg">jpg</a>]<br />
+                        -- Denvid Lau was invited for seminar at University of Nevada Las Vegas on April 4.</p>
+              <p class="style2"><strong><strong><strong><strong>March 2017</strong></strong></strong></strong><br />
+                        -- Denvid Lau was the Chair for Session 10: Civil Infrastructures NDE/SHM II in the SPIE Smart Structures/NDE 2017 from March 25-29 in Portland, USA.<br />
+                    </p>
+                <p class="style2"><strong><strong><strong><strong>December 2016</strong></strong></strong></strong><br />
+                        -- Denvid Lau visited Professor George W. Scherer in Princeton University on December 7. [<a href="images/princeton_visit_120716.jpg">jpg</a>]</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>                      November 2016</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Lik-ho Tam received his PhD degree from CityU. [<a href="images/leo_graduation_2016.jpg">jpg</a>]<br />
+                      -- Denvid Lau was invited to visit the College of Civil Engineering in Shenzhen University on November 17. [<a href="images/Shenzhen_University_Nov_17.jpg">jpg</a>]<br />
+                      -- Junhe Cui received the Best Final Year Project (FYP) award from Amercian Society of Civil Engineers (ASCE) Hong Kong Section.</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>October 2016</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Junhe Cui's research experience in DENS Group is reported in the CityU Today. [<a href="documents/37-39.pdf">pdf</a>]</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>September 2016</strong><br />
+                    </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau becomes the elected staff representative to the search committee for appointment of Head of Department of Architecture and Civil Engineering.</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>August 2016<br />
+                      </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- PhD student, Huali Hao, has been awarded the Chow Yei Ching School of Graduate Studies Entrance Scholarship.<br />
+                      -- PhD student, Zechuan Yu, has been granted the Research Tuition Scholarship by CityU in recognition of his academic achievement and study progress.<br />
+                        -- PhD students, Ao Zhou, Zechuan Yu and Qiwen Qiu, have been granted the Outstanding Academic Performance Awards by CityU in recognition of their outstanding academic performance in the past twelve months.</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>July 2016</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau was an invited  speaker in the KUASCE 2016 Summer Workshop   on July 22 in Kaohsiung, Taiwan.</p>
+                    <p class="style2">                      <strong><strong><strong><strong>March 2016</strong></strong></strong></strong><br />
+                      -- Denvid Lau was invited for seminar at University of Hawaii at Manoa on March 16. [<a href="documents/Seminar_March 16_2016_DL.pdf">pdf</a>]<br />
+                      -- Denvid Lau was the Chair for 3 sessions in the SPIE Smart Structures/NDE 2016 from March 20-24 in Las Vegas, NV, USA:<br />
+                      Session 11: NDE for Offshore and Railroad Structures<br />
+                      Session 12: Laser and Optical NDE<br />
+                      Session 13: Signal Processing Techniques in NDE<br />
+                      -- PhD student, Qiwen Qiu, attended the SPIE Smart Structures/NDE 2016 in Las Vegas, USA and had an oral presentation entitled &quot;Use of laser reflection technique for defect detection in CFRP-concrete systems&quot;. The conference paper is authored by Q. Qiu and D. Lau.</p>
+                    <p class="style2"><strong><strong><strong><strong></strong></strong></strong></strong><strong><strong><strong><strong><strong><strong><strong><strong></strong></strong></strong></strong></strong></strong></strong></strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>January 2016</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong></strong>-- PhD student, Ao Zhou, was nominated by the School of Graduate Studies in CityU for the 4th Global Young Scientist Summit@one-north 2016 from 17–22 January. The topic of the 2016 Singapore Challenge is &quot;Sustainable and Liveable Cities&quot;.</p>
+                    <p class="style2"><strong><strong><strong><strong>December 2015</strong></strong></strong></strong><br />
+-- Denvid Lau was invited for seminar at Worcester Polytechnic Institute on December 8. [<a href="documents/2015_WPI_seminar.pdf">pdf</a>]</p>
+                      <p class="style2"><strong><strong><strong><strong></strong></strong></strong></strong><strong><strong><strong><strong><strong><strong><strong><strong>November 2015</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau is an invited  speaker in the luncheon meeting for the Rotary Club of Peninsula South  on November 26 in Peninsula Hotel, Hong Kong<strong>.</strong><br />
+                      -- Prof. Tzu-yang Yu visited DENS Group on November 17 and gave a seminar entitled &quot;Condition Assessment of Concrete Structures using Radar Imaging&quot;.</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong>October 2015</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Three CVSE final year undergraduate students supervised by Denvid Lau won an award named &quot;Overseas Specially Invited Outstanding Prize&quot; in The 9th National Structural Design Contest for College Students in Kunming, China<strong>.</strong></p>
+                      <p class="style2"><strong><strong><strong><strong>August 2015</strong><br />
+                      </strong></strong></strong>-- Denvid Lau is an invited  speaker in the session called &quot;Computational Mechanics of Advanced Materials and Structures for Mechanical and Energetic Applications&quot; organised by the 2015 World Congress on Advances in Structural Engineering and Mechanics, which is held from August 25-29 in Incheon, Korea.<br />
+                      -- PhD student, Zechuan Yu, has been granted the Research Tuition Scholarship  by CityU in recognition of his academic achievement and study progress.<br />
+                      -- PhD students, Ao Zhou, Zechuan Yu and Lik-ho Tam, have been granted the Outstanding Academic Performance Awards by CityU in recognition of their outstanding academic performance in the past twelve months.</p>
+                    <p class="style2"><strong><strong>July 2015</strong><br />
+                      </strong>-- Denvid Lau gave a presentation in SuDBE 2015 at the University of Reading, UK.</p>
+<p class="style2"><strong>June 2015</strong><br />
+                        -- Denvid Lau was invited to visit the School of Civil Engineering and Transportation in South China University of Technology (SCUT) on June 9. [<a href="http://www2.scut.edu.cn/s/54/t/31/be/e5/info114405.htm">link 1</a>][<a href="http://sites.scut.edu.cn/s/54/t/31/c1/ca/info115146.htm">link 2</a>]<br />
+                      -- Denvid was invited to the Student Project Exhibition 2015 in CityU on June 25.</p>
+                      <p class="style2"><strong>April 2015<br />
+                      </strong>-- PhD student, Lik-ho Tam, attended 2015 MRS Spring Meeting in San Francisco, CA, USA and had an oral presentation entitled &quot;Molecular simulation of adhesion property recovery in the cellulose/phenolic adhesive interface: The role of water molecules&quot;. The conference paper is authored by L. Tam and D. Lau.</p>
+                      <p class="style2"><strong><strong></strong></strong><strong><strong><strong><strong><strong><strong><strong><strong>March 2015</strong><br />
+                        </strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau was the Chair for 4 sessions in the SPIE Smart Structures/NDE 2015 from March 9-10 in San Diego, CA, USA:<br />
+                        Session 1: SHM/NDE for Composite Materials I<br />
+                        Session 2: SHM/NDE for Composite Materials II<br />
+                        Session 3: SHM/NDE for Composite Materials III<br />
+                        Session 6: Piezoelectric Sensing SHM/NDE Technologies I<br />
+                        -- Denvid Lau had a talk at University of California, San Diego on March 11.<br />
+                    -- Denvid Lau was invited for seminar at University of California, Irvine on March 12. [<a href="documents/CE_295_March_12_2015_Seminar_Dr._Denvid_Lau.pdf">pdf</a>]</p>
+                  <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong>February 2015</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau's research work is reported in the CityU Today. [<a href="documents/p32-33.pdf">pdf</a>]</p>
+                    <p class="style2"><strong><strong><strong><strong><strong><strong><strong><strong>January 2015</strong><br />
+                      </strong></strong></strong></strong></strong></strong></strong>-- Denvid Lau gave a short lecture entitled &quot;Ten Megaprojects in Hong Kong&quot; to a group of students coming from Incheon National University on January 27.</p>
+                    <p class="style2"><strong><strong><strong><strong>December 2014</strong><br />
+                        </strong></strong></strong>-- Denvid Lau is recognized as a top author in <em>Construction and Building Materials</em>. [<a href="documents/Elsevier_Top_Authors_CBM.pdf">pdf</a>]<br />
+                      -- Denvid Lau is an invited speaker in the ICSS Workshop on Micro/Nano-Mechanics.<br />
+                      --Denvid Lau has become the Secretary of the ASCE Hong Kong Section.</p>
+                    <p class="style2"><strong><strong><strong><strong>October 2014</strong><br />
+                      </strong></strong></strong>-- Denvid Lau's research work is reported in the HKIE Technology Focus. [<a href="http://www.hkengineer.org.hk/program/home/article.php?aid=7916&amp;volid=172">link</a>][<a href="documents/Oct_2014_HKIE_Tech_Focus.pdf">pdf</a>]</p>
+                    <p class="style2"><strong><strong>August 2014</strong><br />
+                        </strong>-- PhD student, Ao Zhou, has been granted the Outstanding Academic Performance Award by CityU in recognition of his outstanding academic performance in the past twelve months.<br />
+                      -- PhD student, Ao Zhou, attended 2014 Engineering Mechanics Institute (EMI) Conference in McMaster University, Hamilton, Ontario, Canada and had a poster presentation entitled ”Debonding of concrete-epoxy interface under the coupled effect of moisture and sustained loading”. The poster is authored by A. Zhou, H.K. Lau and D. Lau.</p>
+                    <p class="style2"><strong><strong>July 2014</strong><br />
+                        </strong>-- <strong>PNAS</strong> Editorial Board has given final approval of the article entitled &quot;A robust nano-scale  experimental quantification of fracture energy in a bilayer material system&quot; for publication.<br />
+                      Oriental Daily News
+                      [<a href="http://hk.on.cc/hk/bkn/cnt/news/20140817/bkn-20140817132332813-0817_00822_001.html">link</a>][<a href="images/oriental_daily_pnas.jpg">image</a>]<br />
+                      Sing Pao [<a href="images/sing_pao.jpg">image</a>]<br />
+                      Metro Daily [<a href="images/metro_daily.jpg">image</a>]<br />
+                      Hong Kong Commercial Daily [<a href="http://www.hkcd.com.hk/content/2014-08/18/content_3370622.htm">link</a>][<a href="images/hong_kong_commercial_daily.jpg">image</a>]<br />
+                      Sing Tao Daily [<a href="images/sing_tao_daily.jpg">image</a>]<br />
+                      Hong Kong Daily News [<a href="images/hong_kong_daily.jpg">image</a>]<br />
+                      The Sun [<a href="http://the-sun.on.cc/cnt/news/20140818/00407_081.html">link</a>][<a href="images/sun.jpg">image</a>]<br />
+                      CityU NewsCenter [<a href="http://wikisites.cityu.edu.hk/sites/newscentre/en/Pages/201408181100.aspx">link</a>]<br />
+                      -- Denvid Lau was invited for seminar at University of Massachusetts Lowell.<br />
+                      --
+                      PhD student Zechuan Yu will attend the 7th World Congress of Biomechanics in Boston and will present a paper  entitled &quot;Molecular Mechanics of Chitin-Protein Interface&quot;. The paper is authored by Z. Yu and D. Lau.</p>
+                    <p class="style2"><strong><strong>June 2014</strong><br />
+                        </strong>-- Denvid Lau gave a short lecture entitled &quot;Research on Construction Materials: Modeling, Simulation &amp; Experiment&quot; to a group of students coming from the Department of Civil and Environmental Engineering, Nanyang Technological University (NTU) on June 10.<br />
+                      -- Denvid Lau was invited as the commencement speaker for the 45th commencement of St Matthew's Lutheran School (S.M.P.) on June 28.</p>
+                    <p class="style2"><strong><strong>March 2014</strong><br />
+                        </strong>-- Denvid Lau was the Chair of the session &quot;Modeling and Simulation Techniques in NDE/SHM II&quot; in the SPIE Smart Structures/NDE 2014, which was held on March 13 in San Diego, CA, USA.<br />
+                      -- Denvid Lau was invited for seminar at University of Massachusetts Amherst. [<a href="images/umass_amherst_seminar.jpg">image</a>] </p>
+                    <p class="style2"><strong><strong><strong><strong>December 2013</strong><br />
+                      </strong></strong></strong>-- Denvid Lau was invited for seminars at Massachusetts Institute of Technology (MIT) and University of Massachusetts Lowell. [<a href="documents/CEE_Seminar_Announcement_Lau.pdf">pdf</a>][<a href="images/umass_lowell_seminar.jpg">image</a>]</p>
+                    <p class="style2"><strong><strong><strong><strong>November 2013</strong><br />
+                      </strong></strong></strong>-- Denvid Lau has become the Director of the American Society of Civil Engineers (ASCE) Hong Kong Section.</p>
+                    <p class="style2"><strong><strong>September 2013</strong><br />
+                      </strong>-- Denvid Lau has become the Member of the Hong Kong Institution of Engineers (HKIE) in Civil Discipline.</p>
+                    <p class="style2"><strong><strong>August 2013</strong><br />
+                      </strong>-- Denvid Lau was the Chair of the session &quot;Nanomaterials: Characterization and Application II&quot; in the 13th IEEE International Conference on Nanotechnology, which was held on August 8 in Beijing, China.</p>
+                    <p class="style2"><strong><strong>July 2013</strong><br />
+                      </strong>-- Denvid Lau is appointed as the Programme Leader of Civil and Structural Engineering (CVSE) in the Department of Civil and Architectural Engineering at CityU.</p>
+                    <p class="style2"><strong>June 2013</strong><br />
+                      -- Denvid Lau was invited as a speaker in the International Workshop on Life-Cycle Performance of Concrete Structures, which was held on June 15 in Hong Kong.</p>
+                    <p class="style2"><strong>May 2013</strong><br />
+                      -- Denvid Lau has become the Member of the Institute of Electrical and Electronics Engineers (IEEE).</p>
+                    <p class="style2"><strong>February 2013</strong><br />
+                      -- Denvid Lau has advanced to full Member of the American Society of Civil Engineers (ASCE).</p>
+                    <p class="style2"><strong>January 2013</strong><br />
+                      -- Denvid Lau has become the Member of the Society of Photo-Optical Instrumentation Engineers (SPIE).</p>
+                    <p class="style2"><strong>December 2012</strong><br />
+                      -- Denvid Lau was a co-author of a keynote paper in the  1st International Conference on Performance-based and Life-cycle Structural Engineering (PLSE) which was held  on December 5-7 in Hong Kong.</p>
+                    <p class="style2"><strong>November 2012</strong><br />
+                      -- Denvid Lau had an invited seminar on November 9, 2012 in the Department of Civil and Structural Engineering at Hong Kong Polytechnic University.<br />
+                      -- Denvid Lau had an invited talk in the 6th Annual IEEE International Conference on Nano/Molecular Medicine and Engineering which was held on November 4-7, 2012, in Bangkok, Thailand. </p>
+                    <p class="style2"><strong>August 2012</strong><br />
+                      -- Denvid Lau is appointed as an Assistant Professor in the Department of Civil and Architectural Engineering at City University of Hong Kong, Hong Kong, China. </p>
+                    <p class="style2"><strong>July 2012</strong><br />
+                      -- Denvid Lau attended the NSF CMMI Engineering Research and Innovation Conference 2012 which took place July 9–12 in Boston, 
+                      Massachusetts, USA.</p>
+                    <p class="style2"><strong>June 2012</strong><br />
+                      -- Denvid Lau was appointed as a Postdoctoral Associate at the Masssachusetts Institute of Technology, Cambridge, 
+                      Massachusetts, USA.</p>
+                    <p class="style2"><strong>May 2012</strong><br />
+                      -- Denvid Lau successfully defended his Ph.D thesis work on effects of moisture on debonding in bi-layer material systems under the supervision of Professor Oral Buyukozturk at MIT.</p>
+                    <p class="style2"><a href="http://web.mit.edu/istgroup/ist/news.html">Older News</a></p>
+                    <p class="style2"><br />
+                          <br />
+                          <br />
+                          <br />
+                    </p></td>
+                  <td width="200"><p><a href="images/young_techpreneur_project_2023.jpg"><img src="images/young_techpreneur_project_2023.jpg" width="200" height="150" border="0" /></a></p>
+                    <p><a href="images/HKSSPC_2023.jpg"><img src="images/HKSSPC_2023.jpg" width="200" height="133" border="0" /></a></p>
+                    <p><a href="images/RIF_2022-23.jpg"><img src="images/RIF_2022-23.jpg" width="200" height="133" border="0" /></a></p>
+                    <p><a href="images/lunch_01092022.jpg"><img src="images/lunch_01092022.jpg" width="200" height="150" /></a></p>
+                    <p><a href="images/jasmine_graduation_2022.jpg"><img src="images/jasmine_graduation_2022.jpg" width="200" height="134" /></a></p>
+                    <p><a href="images/YMCA_Oct_19.jpg"><img src="images/YMCA_Oct_19.jpg" width="200" height="133" /></a></p>
+                    <p><a href="images/lunch_21092021.jpg"><img src="images/lunch_21092021.jpg" width="200" height="144" /></a></p>
+                    <p><a href="images/lunch_20072021.jpg"><img src="images/lunch_20072021.jpg" width="200" height="150" /></a></p>
+                    <p><a href="images/lunch_ryan_2020.jpg"><img src="images/lunch_ryan_2020.jpg" width="200" height="75" /></a></p>
+                    <p><a href="images/ryan_graduation_2020.jpg"><img src="images/ryan_graduation_2020.jpg" width="200" height="150" /></a></p>
+                    <p><a href="images/dinner_huali_2020.jpg"><img src="images/dinner_huali_2020.jpg" width="200" height="150" /></a></p>
+                    <p><a href="images/apcom_2019.jpg"><img src="images/apcom_2019.jpg" width="200" height="150" /></a></p>
+                    <p><a href="images/huali_jane_graduation_2019.jpg"><img src="images/huali_jane_graduation_2019.jpg" width="200" height="150" /></a></p>
+                    <p><a href="images/lunch_30092019.jpg"><img src="images/lunch_30092019.jpg" width="200" height="141" /></a></p>
+                    <p><a href="images/2019_Beihang_seminar.jpg"><img src="images/2019_Beihang_seminar.jpg" width="200" height="67" /></a></p>
+                    <p><a href="images/yashk_Jun_2019.jpg"><img src="images/yashk_Jun_2019.jpg" width="200" height="148" /></a></p>
+                    <p><a href="images/ifiress_nadia.jpg"><img src="images/ifiress_nadia.jpg" width="200" height="267" /></a></p>
+                    <p><a href="images/ifiress_huali.jpg"><img src="images/ifiress_huali.jpg" width="200" height="267" /></a></p>
+                    <p><a href="images/GZ_Apr_2019.jpg"><img src="images/GZ_Apr_2019.jpg" width="200" height="186" /></a></p>
+                    <p><a href="images/dinner_01_2019.jpg"><img src="images/dinner_01_2019.jpg" width="200" height="138" /></a></p>
+                    <p><img src="images/HIT_Dec_13.jpg" width="200" height="150" /></p>
+                    <p><a href="images/kunal_2018.jpg"><img src="images/kunal_2018.jpg" width="200" height="142" /></a></p>
+                    <p><a href="images/dinner_ao_2018.jpg"><img src="images/dinner_ao_2018.jpg" width="200" height="97" /></a></p>
+                    <p><a href="images/lunch_qiwen_yohannes.jpg"><img src="images/lunch_qiwen_yohannes.jpg" width="200" height="75" /></a></p>
+                    <p><a href="images/ICCE_keynote_DL_01.jpg"><img src="images/ICCE_keynote_DL_01.jpg" width="200" height="150" /></a></p>
+                    <p><a href="images/ICAMEM_2018_plenary.jpg"><img src="images/ICAMEM_2018_plenary.jpg" width="200" height="133" /></a></p>
+                    <p><a href="images/hkie_annual_dinner_2018.jpg"><img src="images/hkie_annual_dinner_2018.jpg" width="200" height="300" /></a></p>
+                    <p><a href="images/annual_party_2017.jpg"><img src="images/annual_party_2017.jpg" width="200" height="58" border="0" /></a></p>
+                    <p><a href="images/meacm2017_plenary.jpg"><img src="images/meacm2017_plenary.jpg" width="200" height="133" /></a></p>
+                    <p><a href="images/meacm2017.jpg"><img src="images/meacm2017.jpg" width="200" height="72" /></a></p>
+                    <p><a href="images/ao_zec_graduation_2017.jpg"><img src="images/ao_zec_graduation_2017.jpg" width="200" height="133" /></a></p>
+                    <p><a href="images/dinner_zec.jpg"><img src="images/dinner_zec.jpg" width="200" height="96" /></a></p>
+                    <p><a href="images/claire_2017.jpg"><img src="images/claire_2017.jpg" width="200" height="165" /></a></p>
+                    <p><a href="images/yumin_2017.jpg"><img src="images/yumin_2017.jpg" width="200" height="117" /></a></p>
+                    <p><a href="images/dinner_ao.jpg"><img src="images/dinner_ao.jpg" width="200" height="122" /></a></p>
+                    <p><a href="images/icce-25_2017.jpg"><img src="images/icce-25_2017.jpg" width="200" height="274" /></a></p>
+                    <p><a href="images/2017_DH_visit.jpg"><img src="images/2017_DH_visit.jpg" width="200" height="135" /></a></p>
+                    <p><a href="images/HIT_Shenzhen_Apr_28.jpg"><img src="images/HIT_Shenzhen_Apr_28.jpg" width="200" height="157" /></a></p>
+                    <p><a href="images/christmas_party_2016.jpg"><img src="images/christmas_party_2016.jpg" width="200" height="75" /></a></p>
+                    <p><a href="images/dinner_leo.jpg"><img src="images/dinner_leo.jpg" width="200" height="125" /></a></p>
+                    <p><a href="images/leo_graduation_2016.jpg"><img src="images/leo_graduation_2016.jpg" width="200" height="108" /></a></p>
+                    <p><a href="images/Shenzhen_University_Nov_17.jpg"><img src="images/Shenzhen_University_Nov_17.jpg" width="200" height="190" /></a></p>
+                    <p><a href="images/KUASCE_2016_Summer_Workshop_group_pic.jpg"><img src="images/KUASCE_2016_Summer_Workshop_group_pic.jpg" width="200" height="112" /></a></p>
+                    <p><a href="images/group_pic_jul_2016.jpg"><img src="images/group_pic_jul_2016.jpg" width="200" height="133" /></a></p>
+                    <p><a href="images/spie_2016.jpg"><img src="images/spie_2016.jpg" width="200" height="267" /></a></p>
+                    <p><a href="images/new_year_party_2016.jpg"><img src="images/new_year_party_2016.jpg" width="200" height="60" /></a></p>
+                    <p><a href="images/dinner_09_2015.jpg"><img src="images/dinner_09_2015.jpg" width="200" height="119" /></a></p>
+                    <p><a href="images/2015_Nov_Rotary_talk.jpg"><img src="images/2015_Nov_Rotary_talk.jpg" width="200" height="122" /></a></p>
+                    <p><a href="images/2015_TY_visit.jpg"><img src="images/2015_TY_visit.jpg" width="200" height="133" /></a></p>
+                    <p><a href="images/awards_presentation_ceremony.jpg"><img src="images/awards_presentation_ceremony.jpg" width="200" height="106" /></a></p>
+                    <p><a href="images/march_2015_dinner.jpg"><img src="images/march_2015_dinner.jpg" width="200" height="44" /></a></p>
+                    <p><a href="images/SuDBE_2015_ppt.jpg"><img src="images/SuDBE_2015_ppt.jpg" width="200" height="64" /></a></p>
+                    <p><a href="images/SCUT_Visit_June_2015.jpg"><img src="images/SCUT_Visit_June_2015.jpg" width="200" height="200" /></a></p>
+                    <p><a href="images/2015_student_project_exhibition.jpg"><img src="images/2015_student_project_exhibition.jpg" width="200" height="84" /></a></p>
+                    <p><a href="images/incheon_jan_2015.jpg"><img src="images/incheon_jan_2015.jpg" width="200" height="115" /></a></p>
+                    <p><a href="images/dinner_12_2014.jpg"><img src="images/dinner_12_2014.jpg" width="200" height="92" /></a></p>
+                      <p><a href="images/dinner_09_2014.jpg"><img src="images/dinner_09_2014.jpg" width="200" height="108" /></a></p>
+                    <p><a href="images/PNAS_news.jpg"><img src="images/PNAS_news.jpg" width="200" height="133" /></a></p>
+                    <p><a href="images/2014_SMP_45_Grad_Ceremony.jpg"><img src="images/2014_SMP_45_Grad_Ceremony.jpg" width="200" height="266" /></a></p>
+                    <p><a href="images/lunch_exp_june_2014.jpg"><img src="images/lunch_exp_june_2014.jpg" width="200" height="104" /></a></p>
+                    <p><a href="images/spie_2014.jpg"><img src="images/spie_2014.jpg" width="200" height="135" /></a></p>
+                    <p><a href="images/2013_xmas_party.jpg"><img src="images/2013_xmas_party.jpg" width="200" height="108" /></a></p>
+                    <p><a href="images/dinner_09_2013.jpg"><img src="images/dinner_09_2013.jpg" width="200" height="83" /></a></p>
+                    <p><a href="images/ieee-nano_2013.jpg"><img src="images/ieee-nano_2013.jpg" width="200" height="130" /></a></p>
+                    <p><a href="images/spie_2013.jpg"><img src="images/spie_2013.jpg" width="200" height="153" /></a></p>
+                    <p><a href="images/plse_2012.jpg"><img src="images/plse_2012.jpg" width="200" height="70" /></a></p></td>
+                </tr>
+                <tr valign="top">
+                  <td colspan="2"><p>&nbsp;</p></td>
+                </tr>
+              </tbody>
+            </table>
+            <p align="center">&nbsp;</p>
+          </div>
+          <p>&nbsp;</p>
+          <!-- end #mainContent -->
+        </div>
+      </div>
+  </div>
+ 
+<!-- nav-->
+  
+  
+  
+  
+  
+
+  
+
+
+    <!-- end #sidebar2 -->
+    <br class="clearfloat">
+  <div id="footer">
+   
+  <div id="footercol2">
+  <p class="copyright">Copyright© 2023, Denvid Lau Lab, all rights reserved.<br> 
+An equal access/equal opportunity university</p>
+</div>
+
+  <div id="footercol1">
+    <p>Department of Architecture and Civil Engineering<br />
+      City University of Hong Kong <br>
+      Tat Chee Avenue, Kowloon, Hong Kong <br>
+    </p>
+    </div>
+      
+
+    
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+<!-- end #wrapperr --></div>
+
+
+
+</body></html>
